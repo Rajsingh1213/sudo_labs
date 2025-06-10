@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - My Real Estate Site{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>{{ hero.title }}</h1>
+    <p>{{ hero.subtitle }}</p>
+    <a href="{{ hero.cta_link }}">{{ hero.cta_text }}</a>
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>{{ about.description }}</p>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <ul>
+    {% for service in services %}
+        <li>
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+</section>
+
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <ul>
+    {% for testimonial in testimonials %}
+        <li>
+            <blockquote>"{{ testimonial.comment }}"</blockquote>
+            <p>- {{ testimonial.client_name }}, {{ testimonial.client_position }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+</section>
+
+<section class="blog-highlights">
+    <h2>Latest Blogs</h2>
+    <ul>
+    {% for blog in blogs %}
+        <li>
+            <a href="{% url 'blog_detail' blog.id %}">{{ blog.title }}</a> - {{ blog.published_date|date:"M d, Y" }}
+        </li>
+    {% endfor %}
+    </ul>
+</section>
+{% endblock %}

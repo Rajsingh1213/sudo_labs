@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Testimonials - My Real Estate Site{% endblock %}
+
+{% block content %}
+<h1>Client Testimonials</h1>
+<ul>
+    {% for testimonial in testimonials %}
+    <li>
+        <blockquote>"{{ testimonial.comment }}"</blockquote>
+        <p>- {{ testimonial.client_name }}, {{ testimonial.client_position }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

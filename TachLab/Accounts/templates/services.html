@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Services - My Real Estate Site{% endblock %}
+
+{% block content %}
+<h1>Our Services</h1>
+<ul>
+    {% for service in services %}
+    <li>
+        <h2>{{ service.title }}</h2>
+        <p>{{ service.description }}</p>
+        <p>Price: {{ service.price }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
