@@ -9,6 +9,7 @@ from .views import (
     HeroSectionList, HeroSectionDetail, ProductGalleryImageList,
     HomePageAPIView
 )
+from .views import base_view
 
 urlpatterns = [
     path('about-sections/', AboutSectionList.as_view()),
@@ -45,4 +46,6 @@ urlpatterns = [
     # path('services/<int:service_id>/gallery/', ServiceGalleryImageList.as_view()),
 
     path('homepage/', HomePageAPIView.as_view(), name='homepage-api'),
+
+    path('base/', base_view, name='base'),
 ]
