@@ -169,5 +169,31 @@ class HomePageAPIView(APIView):
 from django.shortcuts import render
 
 def base_view(request):
+    return render(request,'base.html')
+
+def home_view(request):
     return render(request,'home.html')
+
+def about_view(request):
+    return render(request,'about.html')
+
+def services_view(request):
+    return render(request,'services.html')
+
+def products_view(request):
+    return render(request,'products.html')
+
+def blog_list_view(request):
+    return render(request,'blog_list.html')
+
+def testimonials_view(request):
+    return render(request,'testimonials.html')
+
+def contact_view(request):
+    return render(request,'contact.html')
+
+def index_view(request):
+    return render(request,'index7.html')
+
+
 

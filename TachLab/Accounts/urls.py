@@ -9,7 +9,9 @@ from .views import (
     HeroSectionList, HeroSectionDetail, ProductGalleryImageList,
     HomePageAPIView
 )
-from .views import base_view
+from .views import base_view, home_view, about_view, services_view, products_view, blog_list_view, testimonials_view, contact_view, index_view
+
+app_name = 'accounts'
 
 urlpatterns = [
     path('about-sections/', AboutSectionList.as_view()),
@@ -18,12 +20,12 @@ urlpatterns = [
     path('about-team-members/', AboutTeamMemberList.as_view()),
     path('trust-logos/', TrustLogoList.as_view()),
 
-    path('services/', ServiceList.as_view()),
+    # path('services/', ServiceList.as_view()),
     path('services/<int:pk>/', ServiceDetail.as_view()),
     path('service-categories/', ServiceCategoryList.as_view()),
     path('service-features/', ServiceFeatureList.as_view()),
 
-    path('products/', ProductList.as_view()),
+    # path('products/', ProductList.as_view()),
     path('products/<int:pk>/', ProductDetail.as_view()),
     path('product-categories/', ProductCategoryList.as_view()),
 
@@ -35,7 +37,7 @@ urlpatterns = [
     path('blog-categories/', BlogCategoryList.as_view()),
     path('blog-tags/', BlogTagList.as_view()),
 
-    path('testimonials/', TestimonialList.as_view()),
+    # path('testimonials/', TestimonialList.as_view()),
     path('testimonials/<int:pk>/', TestimonialDetail.as_view()),
     path('testimonial-categories/', TestimonialCategoryList.as_view()),
 
@@ -48,4 +50,12 @@ urlpatterns = [
     path('homepage/', HomePageAPIView.as_view(), name='homepage-api'),
 
     path('base/', base_view, name='base'),
+    path('', home_view, name='home'),
+    path('about/', about_view, name='about'),
+    path('services/', services_view, name='services'),
+    path('products/', products_view, name='products'),
+    path('blog/', blog_list_view, name='blog_list'),
+    path('testimonials/', testimonials_view, name='testimonials'),
+    path('contact/', contact_view, name='contact'),
+    path('index/', index_view, name='index'),
 ]

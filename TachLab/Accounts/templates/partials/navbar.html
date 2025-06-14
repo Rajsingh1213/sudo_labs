@@ -1,11 +1,12 @@
 <nav>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="{% url "accounts:home" %}">Home</a></li>
+        <li><a href="{% url "accounts:about" %}">About Us</a></li>
+        <li><a href="{% url "accounts:services" %}">Services</a></li>
+        <li><a href="{% url "accounts:products" %}">Products</a></li>
+        <li><a href="{% url "accounts:blog_list" %}">Blog</a></li>
+        <li><a href="{% url "accounts:testimonials" %}">Testimonials</a></li>
+        <li><a href="{% url "accounts:contact" %}">Contact</a></li>
+        <li><a href="{% url "accounts:index" %}">Index</a></li>
     </ul>
 </nav>
