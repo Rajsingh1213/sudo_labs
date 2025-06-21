@@ -9,7 +9,7 @@ from .views import (
     HeroSectionList, HeroSectionDetail, ProductGalleryImageList,
     HomePageAPIView
 )
-from .views import base_view, home_view, about_view, services_view, products_view, blog_list_view, testimonials_view, contact_view, index_view
+from .views import base_view, home_view, about_view, services_view, products_view, blogs_view, testimonials_view, contact_view, index_view
 
 app_name = 'accounts'
 
@@ -50,12 +50,12 @@ urlpatterns = [
     path('homepage/', HomePageAPIView.as_view(), name='homepage-api'),
 
     path('base/', base_view, name='base'),
-    path('', home_view, name='home'),
+    path('home/', home_view, name='home'),
     path('about/', about_view, name='about'),
     path('services/', services_view, name='services'),
     path('products/', products_view, name='products'),
-    path('blog/', blog_list_view, name='blog_list'),
+    path('blog/', blogs_view, name='blogs'),
     path('testimonials/', testimonials_view, name='testimonials'),
     path('contact/', contact_view, name='contact'),
-    path('index/', index_view, name='index'),
+    path('', index_view, name='index'),
 ]

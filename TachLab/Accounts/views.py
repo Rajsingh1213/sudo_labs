@@ -183,8 +183,8 @@ def services_view(request):
 def products_view(request):
     return render(request,'products.html')
 
-def blog_list_view(request):
-    return render(request,'blog_list.html')
+def blogs_view(request):
+    return render(request,'blog.html')
 
 def testimonials_view(request):
     return render(request,'testimonials.html')
