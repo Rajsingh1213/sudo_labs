@@ -148,16 +148,16 @@
               <div class="col-lg-6">
                 <div class="about2-images">
                   <div class="image1">
-                    <img src="{% static 'assets/img/about/about2-img1.png' %}" alt="">
+                    {% comment %} <img src="{% static 'assets/img/about/about2-img1.png' %}" alt=""> {% endcomment %}
                   </div>
                   <div class="image2">
-                    <img src="{% static 'assets/img/about/about2-img2.png' %}" alt="">
+                    <img src="{% static 'assets/img/about/about_img1.png' %}" alt="" style="height:450px;">
                   </div>
                   <div class="image3">
-                    <img src="{% static 'assets/img/about/about2-img3.png' %}" alt="">
+                    {% comment %} <img src="{% static 'assets/img/about/about2-img3.png' %}" alt=""> {% endcomment %}
                   </div>
                   <div class="counter-box">
-                    <h3>25</h3>
+                    <h3>5+</h3>
                     <p>Years Of <br> Experience</p>
                   </div>
                 </div>
@@ -165,10 +165,10 @@
 
               <div class="col-lg-6">
                 <div class="heading1">
-                  <span class="span"><img src="{% static 'assets/img/icons/span1.png' %}" alt=""> About Us</span>
+                  <span class="span"><img src="{% static 'assets/img/icons/sudoicon1.ico' %}" alt="" style="width: 20px; height: 18px;"> About Us</span>
                   <h2>Empower Your Business With Our Comprehensive IT Solutions</h2>
                   <div class="space16"></div>
-                  <p>Welcome to Sudo Techlabs, your premier destination for cutting-edge technology solutions and IT services. At Sudo Techlabs, we are passionate about harnessing the power of technology to empower businesses alike.</p>
+                  <p>Welcome to <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>, your premier destination for cutting-edge technology solutions and IT services. At <span style="font-family:alice;font-weight:bold">Sudo Techlabs</span>, we are passionate about harnessing the power of technology to empower businesses alike.</p>
 
                   <div class="space10"></div>
 
@@ -177,6 +177,42 @@
                       <div class="heading">
                         <h6>IT Consulting</h6>
                         <p>80%</p>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="progress-line">
+                      <div class="heading">
+                        <h6>Custom Software Development</h6>
+                        <p>75%</p>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="progress-line">
+                      <div class="heading">
+                        <h6>Cyber Security Solutions</h6>
+                        <p>80%</p>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="progress-line">
+                      <div class="heading">
+                        <h6>AI & Machine Learning</h6>
+                        <p>75%</p>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="progress-line">
+                      <div class="heading">
+                        <h6>Mobile App Development</h6>
+                        <p>85%</p>
                       </div>
                       <div class="progress">
                         <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
@@ -193,9 +229,13 @@
                     </div>
                   </div>
 
+
+
+                  
+
                   <div class="space30"></div>
                   <div class="button">
-                    <a class="theme-btn1" href="contact.html">Get A Quote <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a class="btn btn-primary" href="{% url "accounts:contact" %}">Get A Quote <span><i class="fa-solid fa-arrow-right"></i></span></a>
                   </div>
 
                 </div>
@@ -214,15 +254,15 @@
               <div class="col-lg-6">
                 <div class="heading1">
                   <span class="span"><img src="{% static 'assets/img/icons/span1.png' %}" alt=""> Our Mission</span>
-                  <h2>Innovating for Success: Our Technology Mission</h2>
+                  <h2>Driving Digital Excellence Through Innovation</h2>
                   <div class="space16"></div>
-                  <p>At Sudo Techlabs, our mission is simple: to revolutionize the digital landscape by delivering top-notch technology solutions that drive growth, efficiency, and sustainability for our clients. We strive to be the trusted partner that businesses can rely on to navigate the complexities of the digital world.</p>
+                  <p>At <span style="font-family:alice;font-weight:bold">Sudo Techlabs</span>, our mission is to empower businesses with smart, future-ready technology solutions that fuel innovation, enhance efficiency, and create sustainable growth. We are committed to being a strategic technology partner, helping clients navigate digital challenges with confidence.</p>
                   <div class="space16"></div>
-                  <p>"At Sudo Techlabs, our mission is to empower businesses through technology. We believe in harnessing the power of innovation to drive growth, efficiency, and sustainability for our clients. Through our tailored technology solutions and unwavering commitment to excellence, we strive to be the catalyst for positive change in the digital landscape.</p>
+                  <p>We don’t just build software — we build value, trust, and transformation. With a deep focus on quality, innovation, and long-term impact, we aim to shape a better digital future for every business we serve.</p>
 
                   <div class="space30"></div>
                   <div class="">
-                    <a class="theme-btn1" href="contact.html">Get A Quote <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a class="btn btn-primary" href="#">Get A Quote <span><i class="fa-solid fa-arrow-right"></i></span></a>
                   </div>
                 </div>
               </div>
@@ -230,13 +270,13 @@
               <div class="col-lg-6">
                 <div class="solution-images">
                   <div class="image1">
-                    <img src="{% static 'assets/img/others/solution-img1.png' %}" alt="">
+                    {% comment %} <img src="{% static 'assets/img/others/solution-img1.png' %}" alt=""> {% endcomment %}
                   </div>
                   <div class="image2">
-                    <img src="{% static 'assets/img/others/solution-img2.png' %}" alt="">
+                    <img src="{% static 'assets/img/others/bg_img2.jpg' %}" alt="">
                   </div>
                   <div class="image3">
-                    <img src="{% static 'assets/img/others/solution-img3.png' %}" alt="">
+                    {% comment %} <img src="{% static 'assets/img/others/solution-img3.png' %}" alt=""> {% endcomment %}
                   </div>
                 </div>
               </div>
@@ -256,21 +296,21 @@
                           <div class="row">
                             <div class="col-lg-12">
                               <div class="image">
-                                <img src="{% static 'assets/img/about/visiton-img1.png' %}" alt="">
+                                <img src="{% static 'assets/img/about/Img_1.jpg' %}" alt="">
                               </div>
                             </div>
 
                             <div class="col-lg-6">
                               <div class="space30"></div>
                               <div class="image">
-                                <img src="{% static 'assets/img/about/visiton-img2.png' %}" alt="">
+                                <img src="{% static 'assets/img/about/Img_2.avif' %}" alt="" style="height:280px;">
                               </div>
                             </div>
 
                             <div class="col-lg-6">
                               <div class="space30"></div>
                               <div class="image">
-                                <img src="{% static 'assets/img/about/visiton-img3.png' %}" alt="">
+                                <img src="{% static 'assets/img/about/Img_3.jpg' %}" alt="" style="height:280px;">
                               </div>
                             </div>
 
@@ -280,39 +320,39 @@
                       <div class="col-lg-6">
                         <div class="heading1">
                           <span class="span"><img src="{% static 'assets/img/icons/span1.png' %}" alt=""> Our Vision</span>
-                          <h2>Driving Innovation: Our Vision at Sudo Techlabs</h2>
+                          <h2>Pioneering the Future of Digital Innovation</h2>
                           <div class="space16"></div>
-                          <p>At Sudo Techlabs, our vision is to be the leading force driving digital transformation and innovation worldwide. We envision a future where businesses of all sizes have the tools and expertise they need to thrive in an increasingly digital world.</p>
+                          <p>At <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>, our vision is to become a global leader in digital transformation, enabling businesses to thrive through innovation, technology, and intelligent solutions. We imagine a future where every organization—regardless of size—has the power to compete, evolve, and succeed in the digital era, supported by agile, secure, and scalable tech ecosystems.</p>
 
                           <div class="item-box">
                             <div class="icon">
                               <div class="">
-                                <img src="{% static 'assets/img/icons/about-solution-iocn1.png' %}" alt="">
+                                <img src="{% static 'assets/img/icons/about-solution-iocn1.png' %}" alt="" style="width:900px;">
                               </div>
                             </div>
                             <div class="">
                               <h3><a href="#">Network Infrastructure Solutions</a></h3>
                               <div class="space10"></div>
-                              <p>Build a reliable and secure network infrastructure that <br> supports your business operations enables seamless</p>
+                              <p>We design and implement robust, secure, and scalable network infrastructures that ensure seamless connectivity and uninterrupted business operations — empowering organizations to operate with confidence and efficiency.</p>
                             </div>
                           </div>
         
                           <div class="item-box">
                             <div class="icon">
                               <div class="">
-                                <img src="{% static 'assets/img/icons/about-solution-iocn2.png' %}" alt="">
+                                <img src="{% static 'assets/img/icons/about-solution-iocn2.png' %}" alt="" style="width:550px;">
                               </div>
                             </div>
                             <div class="">
                               <h3><a href="#">Managed It Services</a></h3>
                               <div class="space10"></div>
-                              <p>Focus on your core business activities while we take <br> care of your IT needs with our managed IT services.</p>
+                              <p>Let your team focus on what matters most — while we handle your IT environment with proactive monitoring, support, and optimization. Our managed services ensure reliability, reduce downtime, and support long-term growth.</p>
                             </div>
                           </div>
         
                           <div class="space30"></div>
                           <div class="">
-                            <a class="theme-btn1" href="contact.html">Get A Quote <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            <a class="btn btn-primary" href="#">Get A Quote <span><i class="fa-solid fa-arrow-right"></i></span></a>
                           </div>
                         </div>
                       </div>
@@ -377,7 +417,7 @@
                                                 <div class="space24"></div>
                                                 <p><span class="text">Early Years:</span> In the early years, Steve Jobs recognized the growing importance of technology in business and set out to create a company that could help organizations leverage the power of digital innovation. With a small team of passionate individuals.</p>
                                                 <div class="space16"></div>
-                                                <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did [Company Name]. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
+                                                <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -398,7 +438,7 @@
                                             <div class="space24"></div>
                                             <p><span class="text">Early Years:</span> In the early years, Steve Jobs recognized the growing importance of technology in business and set out to create a company that could help organizations leverage the power of digital innovation. With a small team of passionate individuals.</p>
                                             <div class="space16"></div>
-                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did Sudo Techlabs. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
+                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -419,7 +459,7 @@
                                             <div class="space24"></div>
                                             <p><span class="text">Early Years:</span> In the early years, Steve Jobs recognized the growing importance of technology in business and set out to create a company that could help organizations leverage the power of digital innovation. With a small team of passionate individuals.</p>
                                             <div class="space16"></div>
-                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did [Company Name]. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
+                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -440,7 +480,7 @@
                                             <div class="space24"></div>
                                             <p><span class="text">Early Years:</span> In the early years, Steve Jobs recognized the growing importance of technology in business and set out to create a company that could help organizations leverage the power of digital innovation. With a small team of passionate individuals.</p>
                                             <div class="space16"></div>
-                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did Sudo Techlabs. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
+                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did Sudo TechLabs. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -461,7 +501,7 @@
                                             <div class="space24"></div>
                                             <p><span class="text">Early Years:</span> In the early years, Steve Jobs recognized the growing importance of technology in business and set out to create a company that could help organizations leverage the power of digital innovation. With a small team of passionate individuals.</p>
                                             <div class="space16"></div>
-                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did Sudo Techlabs. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
+                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -482,7 +522,7 @@
                                             <div class="space24"></div>
                                             <p><span class="text">Early Years:</span> In the early years, Steve Jobs recognized the growing importance of technology in business and set out to create a company that could help organizations leverage the power of digital innovation. With a small team of passionate individuals.</p>
                                             <div class="space16"></div>
-                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did Sudo Techlabs. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
+                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -503,7 +543,7 @@
                                             <div class="space24"></div>
                                             <p><span class="text">Early Years:</span> In the early years, Steve Jobs recognized the growing importance of technology in business and set out to create a company that could help organizations leverage the power of digital innovation. With a small team of passionate individuals.</p>
                                             <div class="space16"></div>
-                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did Sudo Techlabs. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
+                                            <p><span class="text">Expansion & Innovation:</span> As technology continued to evolve, so did <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>. We expanded our service offerings to include a wide range of solutions, from cybersecurity and cloud computing to data analytics and artificial intelligence.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -544,11 +584,11 @@
                   <div class="icon">
                     <img src="{% static 'assets/img/icons/about-page-qute.png' %}" alt="">
                   </div>
-                  <p class="pera">"I have been thoroughly impressed with the level of service and expertise provided by Sudo Techlabs. Their team went above and beyond to understand our business needs and deliver a custom software solution. I highly recommend them to anyone looking for top-notch technology solutions."</p>
+                  <p class="pera">"I have been thoroughly impressed with the level of service and expertise provided by <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>. Their team went above and beyond to understand our business needs and deliver a custom software solution. I highly recommend them to anyone looking for top-notch technology solutions."</p>
 
                   <div class="bottom-area">
                     <div class="author">
-                      <a href="#">Donald Trumph</a>
+                      <a href="#">Arti Sharma</a>
                     </div>
                     <div class="reating">
                       <ul>
@@ -567,11 +607,11 @@
                   <div class="icon">
                     <img src="{% static 'assets/img/icons/about-page-qute.png' %}" alt="">
                   </div>
-                  <p class="pera">"We approached Sudo Techlabs with a complex IT problem, and they were able to provide an innovative solution that addressed our needs perfectly. Their team's creativity, technical prowess, and dedication to client satisfaction are truly commendable.”</p>
+                  <p class="pera">"We approached <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span> with a complex IT problem, and they were able to provide an innovative solution that addressed our needs perfectly. Their team's creativity, technical prowess, and dedication to client satisfaction are truly commendable.”</p>
 
                   <div class="bottom-area">
                     <div class="author">
-                      <a href="#">Matthew Kuhnemann</a>
+                      <a href="#">Mohit Prajapat</a>
                     </div>
                     <div class="reating">
                       <ul>
@@ -591,34 +631,11 @@
                   <div class="icon">
                     <img src="{% static 'assets/img/icons/about-page-qute.png' %}" alt="">
                   </div>
-                  <p class="pera">“Sudo Techlabs has been our go-to partner for IT support for several years now, and they have consistently delivered outstanding service. Their team is highly responsive, knowledgeable, reliable. Thanks to their expertise, we've been able to overcome various IT challenges focus growing business."</p>
+                  <p class="pera">“<span style="font-family:alice;font-weight:bold">Sudo TechLabs</span> has been our go-to partner for IT support for several years now, and they have consistently delivered outstanding service. Their team is highly responsive, knowledgeable, reliable. Thanks to their expertise, we've been able to overcome various IT challenges focus growing business."</p>
 
                   <div class="bottom-area">
                     <div class="author">
-                      <a href="#">Scott Boland</a>
-                    </div>
-                    <div class="reating">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star-half"></i></li>
-                      </ul>
-                      <p>(4.5)</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="single-slider">
-                  <div class="icon">
-                    <img src="{% static 'assets/img/icons/about-page-qute.png' %}" alt="">
-                  </div>
-                  <p class="pera">"I have been thoroughly impressed with the level of service and expertise provided by Sudo Techlabs. Their team went above and beyond to understand our business needs and deliver a custom software solution. I highly recommend them to anyone looking for top-notch technology solutions."</p>
-
-                  <div class="bottom-area">
-                    <div class="author">
-                      <a href="#">Jason Behrendorff</a>
+                      <a href="#">Yashpal Yadav</a>
                     </div>
                     <div class="reating">
                       <ul>
@@ -637,11 +654,34 @@
                   <div class="icon">
                     <img src="{% static 'assets/img/icons/about-page-qute.png' %}" alt="">
                   </div>
-                  <p class="pera">"We approached Sudo Techlabs with a complex IT problem, and they were able to provide an innovative solution that addressed our needs perfectly. Their team's creativity, technical prowess, and dedication to client satisfaction are truly commendable.”</p>
+                  <p class="pera">"I have been thoroughly impressed with the level of service and expertise provided by <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>. Their team went above and beyond to understand our business needs and deliver a custom software solution. I highly recommend them to anyone looking for top-notch technology solutions."</p>
 
                   <div class="bottom-area">
                     <div class="author">
-                      <a href="#">Matthew Kuhnemann</a>
+                      <a href="#">Jyoti Jaiswal</a>
+                    </div>
+                    <div class="reating">
+                      <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half"></i></li>
+                      </ul>
+                      <p>(4.5)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="single-slider">
+                  <div class="icon">
+                    <img src="{% static 'assets/img/icons/about-page-qute.png' %}" alt="">
+                  </div>
+                  <p class="pera">"We approached <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span> with a complex IT problem, and they were able to provide an innovative solution that addressed our needs perfectly. Their team's creativity, technical prowess, and dedication to client satisfaction are truly commendable.”</p>
+
+                  <div class="bottom-area">
+                    <div class="author">
+                      <a href="#">Mohit Swami</a>
                     </div>
                     <div class="reating">
                       <ul>
@@ -661,11 +701,11 @@
                   <div class="icon">
                     <img src="{% static 'assets/img/icons/about-page-qute.png' %}" alt="">
                   </div>
-                  <p class="pera">“Sudo Techlabs has been our go-to partner for IT support for several years now, and they have consistently delivered outstanding service. Their team is highly responsive, knowledgeable, reliable. Thanks to their expertise, we've been able to overcome various IT challenges focus growing business."</p>
+                  <p class="pera">“<span style="font-family:alice;font-weight:bold">Sudo TechLabs</span> has been our go-to partner for IT support for several years now, and they have consistently delivered outstanding service. Their team is highly responsive, knowledgeable, reliable. Thanks to their expertise, we've been able to overcome various IT challenges focus growing business."</p>
 
                   <div class="bottom-area">
                     <div class="author">
-                      <a href="#">Scott Boland</a>
+                      <a href="#">Rani Godara</a>
                     </div>
                     <div class="reating">
                       <ul>
@@ -732,7 +772,7 @@
                           <div class="team-box">
                             <div class="image-area">
                               <div class="image">
-                                <img src="{% static 'assets/img/team/team2-img2.png' %}" alt="">
+                                <img src="{% static 'assets/img/team/aakash1.jpg' %}" alt="" style="height: 400px;">
                               </div>
                               <div class="icon-area">
                                 <ul>
@@ -746,9 +786,9 @@
           
                             <div class="space30"></div>
                               <div class="heading1">
-                                <h4><a href="#">Jane Smith</a></h4>
+                                <h4><a href="#">Aakash Kumawat</a></h4>
                                 <div class="space10"></div>
-                                <p>Chef Technology Officer</p>
+                                <p>Backend Developer</p>
                               </div>
           
                           </div>
@@ -785,7 +825,7 @@
                           <div class="team-box">
                             <div class="image-area">
                               <div class="image">
-                                <img src="{% static 'assets/img/team/team2-img4.png' %}" alt="">
+                                <img src="{% static 'assets/img/team/aadarsh1.jpg' %}" alt="" style="height: 400px;">
                               </div>
                               <div class="icon-area">
                                 <ul>
@@ -799,9 +839,9 @@
           
                             <div class="space30"></div>
                               <div class="heading1">
-                                <h4><a href="#">David Garcia</a></h4>
+                                <h4><a href="#">Aadarsh Sharma</a></h4>
                                 <div class="space10"></div>
-                                <p>Lead Software Engineer</p>
+                                <p>React Developer</p>
                               </div>
           
                           </div>
@@ -822,7 +862,7 @@
             <div class="row align-items-center">
               <div class="col-lg-7">
                 <div class="heading1-w">
-                  <h2>At Sudo Techlabs IT Solutions, We're Committed To Businesses</h2>
+                  <h2>At <span style="font-family:alice;font-weight:bold">Sudo Techlabs</span> IT Solutions, We're Committed To Businesses</h2>
                   <div class="space16"></div>
                   <p>Take the first step towards achieving your business goals by contacting us today. Schedule a consultation with one of our IT specialists to discuss your objectives and explore how our innovative solutions can propel.</p>
                 </div>
@@ -830,8 +870,8 @@
 
               <div class="col-lg-5">
                 <div class="buttons">
-                  <a class="cta-btn1" href="service.html">Request a Consultaion <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                  <a class="cta-btn2" href="service.html">Explore Solution <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a class="btn btn-secondary" href="service.html">Request a Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a class="btn btn-primary" href="service.html">Explore Solution <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
               </div>
             </div>

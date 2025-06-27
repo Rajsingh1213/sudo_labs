@@ -11,7 +11,7 @@
      <title>Sudo Techlabs & It Solution</title>
 
      <!--=====FAB ICON=======-->
-     <link rel="shortcut icon" href="{% static "assets/img/logo/title5.png" %}" type="image/x-icon">
+     <link rel="shortcut icon" href="{% static "assets/img/icons/sudoicon1.ico" %}" type="image/x-icon" style="width: 18px; height: 18px;">
 
 
      <!--=====CSS=======-->
@@ -87,16 +87,17 @@
 <!--=====HEADER START=======-->
 
     <header>
-     <div class="header-area header-area7 header-area-all d-none d-lg-block" id="header">
+     <div class="header-area header-area7 header-area-all d-none d-lg-block " id="header" style="background-color:rgb(30, 25, 109);">
        <div class="container">
          <div class="row">
            <div class="col-12">
              <div class="header-elements">
-               <div class="site-logo" style="width: 200px; height: 35px;">
-                 <a href="{% url "accounts:index" %}">
-                  <img src="{% static "assets/img/logo/white.png" %}" alt="">
-                 </a>
-               </div>
+               <div class="site-logo ml-3 pb-1 d-flex align-items-center">
+                <a href="{% url 'accounts:index' %}" class="d-flex align-items-center text-decoration-none">
+                <img src="{% static 'assets/img/logo/sudo_logo.png' %}" alt="Sudo Techlabs Logo" style="width: 60px; height: 40px; object-fit: contain; ">
+                <span class="text-white h2 mb-0 " style="font-family: alice; font-weight: bold;">Sudo TechLabs</span>
+                </a>
+                </div>
 
 
                <div class="main-menu-ex main-menu-ex1">
@@ -267,7 +268,7 @@
                   </li>
 
                   <li class="dropdown-menu-parrent">
-                    <a href="{% url "accounts:services" %}">Service </i></a>
+                    <a href="{% url "accounts:products" %}">Project </i></a>
                     {% comment %} <ul>
                      <li><a href="service.html">Service </i></a>
                        <ul>
@@ -306,8 +307,8 @@
                     </ul> {% endcomment %}
                   </li>
 
-                 <li class="dropdown-menu-parrent"><a href="#" class="main1">Pages</a>
-                  <div class="mega-menu-all">
+                 <li class="dropdown-menu-parrent"><a href="{% url "accounts:services" %}" class="main1">Service</a>
+                  {% comment %} <div class="mega-menu-all">
                    <div class="row">
                      <div class="col-md-3">
                        <div class="mega-menu-single dis1">
@@ -361,10 +362,10 @@
                      </div>
 
                    </div>
-                  </div>
+                  </div> {% endcomment %}
                 </li>
 
-                  <li class="dropdown-menu-parrent"><a href="{% url "accounts:blogs" %}">Blog </i></a>
+                  <li class="dropdown-menu-parrent"><a href="{% url "accounts:testimonials" %}">Testimonial </i></a>
                    {% comment %} <ul>
                     <li><a href="blog.html">Blog</a>
                       <ul>
@@ -404,7 +405,7 @@
                    </ul> {% endcomment %}
                  </li>
 
-                 <li class="dropdown-menu-parrent"><a href="{% url "accounts:products" %}">Project</a>
+                 <li class="dropdown-menu-parrent"><a href="{% url "accounts:blogs" %}">Blog</a>
                   {% comment %} <ul>
                    <li><a href="project.html">Project</a>
                      <ul>
@@ -452,7 +453,7 @@
 
                <div class="header1-buttons">
                     <div class="button">
-                      <a class="theme-btn12" href="contact.html"><span class="text">Contact Us</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
+                      <a class="theme-btn12" href="{% url "accounts:contact" %}"><span class="text">Contact Us</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
                     </div>
                </div>
 
@@ -532,7 +533,7 @@
             </ul> {% endcomment %}
             </li>
 
-            <li class="has-dropdown"><a href="#">Pages</a> 
+            <li class="has-dropdown"><a href="{% url "accounts:testimonials" %}">Testimonial</a> 
               {% comment %} <ul class="sub-menu">
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="team.html">Team</a></li>
@@ -613,7 +614,7 @@
               <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
               <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
               <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.instagram.com/stechlabs/"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
           </div>
 
@@ -639,13 +640,13 @@
                                       </div>
                                       <div class="space20"></div>
                                       <div class="heading1">
-                                        <p>At Sudo Techlabs, we're dedicated to delivering innovative technology solutions tailored to meet the unique needs of businesses like yours. </p>
+                                        <p>At <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>, we're dedicated to delivering innovative technology solutions tailored to meet the unique needs of businesses like yours. </p>
                                       </div>
                                       <ul class="social-icon">
                                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                                           <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                           <li><a href="https://www.instagram.com/stechlabs/"><i class="fa-brands fa-instagram"></i></a></li>
                                       </ul>
                                  </div>
                             </div>
@@ -655,8 +656,8 @@
                                       <h3>Service We Offer</h3>
         
                                       <ul class="menu-list">
-                                           <li><a href="#">Cloud Computing Solution</a></li>
-                                           <li><a href="#">Cybersecurity & Compliance</a></li>
+                                           <li><a href="#">Custom Software Development | IT Consulting and Strategy</a></li>
+                                           <li><a href="#">Website & </a></li>
                                            <li><a href="#">Software Development</a></li>
                                            <li><a href="#">It Consulting & Support</a></li>
                                       </ul>
@@ -731,7 +732,7 @@
                       <div class="row align-items-center">
                         <div class="col-md-12 text-center">
                              <div class="coppyright">
-                               <p>Copyright @2025 Sudo Techlabs. All Rights Reserved</p>
+                               <p>Copyright @2025 <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span>. All Rights Reserved</p>
                              </div>
                         </div>
                    </div>

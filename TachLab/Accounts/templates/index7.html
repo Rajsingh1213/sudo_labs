@@ -4,19 +4,19 @@
 
         <!--=====HERO AREA START=======-->
 
-        <div class="hero7" style="background-image: url({% static "assets/img/bg/hero-bg7.jpg" %});">
+        <div class="hero7" style="background-image: url({% static "assets/img/hero/bg3.jpg" %});">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="main-heading">
                             <span class="span" data-aos="zoom-in-left" data-aos-duration="700">Our Integrated IT Solutions</span>
-                            <h1>Sudo Techlabs Drive Growth with Our IT Solutions</h1>
+                            <h1><span style="font-family: alice;">Sudo TechLabs</span> Drive Growth with Our IT Solutions</h1>
                             <div class="space16"></div>
-                            <p>Welcome to Sudo Techlabs, your partner in delivering smart, scalable, and future-ready IT solutions tailored to your business needs.</p>
+                            <p>Welcome to <span style="font-family: alice; font-weight: bold;">Sudo TechLabs</span>, your partner in delivering smart, scalable, and future-ready IT solutions tailored to your business needs.</p>
                             <div class="space30"></div>
                             <div class="buttons">
-                                <a class="theme-btn13" href="service.html"><span class="text">Free Consultation</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
-                                <a class="theme-btn12" href="service.html"><span class="text">Discover More</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
+                                <a class="theme-btn13" href="#"><span class="text">Free Consultation</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
+                                <a class="theme-btn12" href="#"><span class="text">Discover More</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
                             </div>
                         </div>
                     </div>
@@ -53,10 +53,10 @@
                     <div class="col-lg-6">
                         <div class="images-all" data-aos="zoom-out" data-aos-duration="800">
                             <div class="image1">
-                                <img src="{% static "assets/img/about/about7-image.png" %}" alt="">
+                                <img src="{% static "assets/img/about/Img_5.avif" %}" alt="">
                             </div>
                             <div class="image2">
-                                <h4>20+</h4>
+                                <h4>5+</h4>
                                 <p>Year Of Experience</p>
                             </div>
                         </div>
@@ -64,21 +64,22 @@
                     <div class="col-lg-6">
                         <div class="heading7">
                             <span class="span" data-aos="zoom-in-left" data-aos-duration="700">About Us</span>
-                            <h2 class="tg-element-title">Transforming Industries with Technology <span>Our Commitment</span></h2>
+                            <h2 class="tg-element-title">Empowering Businesses with  <span style="font-family: alice;">Sudo TechLabs </span></h2>
                             <div class="space16"></div>
-                            <p data-aos="fade-left" data-aos-duration="800">At Your Sudo Techlabs, we are passionate about leveraging technology to drive meaningful change. With a team of seasoned experts in IT solutions, we're committed to delivering cutting.</p>
+                            <p data-aos="fade-left" data-aos-duration="800">At <span style="font-family: alice; font-weight: bold;">Sudo TechLabs</span>, we believe in the power of technology to redefine industries and accelerate growth. With a team of experienced IT professionals, we specialize in building smart, scalable, and future-ready solutions that solve real business challenges.</p>
 
                             <div class="space10"></div>
                             <div class="about-list" data-aos="fade-left" data-aos-duration="1000">
                                 <ul>
-                                  <li><span class="check"><i class="fa-solid fa-check"></i></span> Highlight the unique features or benefits</li>
-                                  <li><span class="check"><i class="fa-solid fa-check"></i></span> Provide a brief overview of each solution</li>
-                                  <li><span class="check"><i class="fa-solid fa-check"></i></span> Present your main solutions/services.</li>
+                                  <li><span class="check"><i class="fa-solid fa-check"></i></span> Custom Software Development</li>
+                                  <li><span class="check"><i class="fa-solid fa-check"></i></span> Cloud & DevOps Solutions</li>
+                                  <li><span class="check"><i class="fa-solid fa-check"></i></span> AI & Data Intelligence</li>
+                                  <li><span class="check"><i class="fa-solid fa-check"></i></span> Digital Transformation Consulting</li>
                                 </ul>
                               </div>
                               <div class="space30"></div>
                               <div class="button" data-aos="fade-left" data-aos-duration="1200">
-                                <a class="theme-btn13" href="about.html"><span class="text">Learn More</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
+                                <a class="theme-btn13" href="{% url "accounts:about" %}"><span class="text">Learn More</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
                               </div>
 
                         </div>
@@ -86,7 +87,7 @@
                 </div>
 
                 <div class="space30"></div>
-                <div class="row">
+                {% comment %} <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="about-counter">
                             <h4>450+</h4>
@@ -95,7 +96,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="about-counter">
-                            <h4>990+</h4>
+                            <h4>50+</h4>
                             <p>IT Projects</p>
                         </div>
                     </div>
@@ -109,12 +110,114 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="about-counter">
-                            <h4>20+</h4>
+                            <h4>5+</h4>
                             <p>Glorious Years</p>
                         </div>
                     </div>
 
-                </div>
+                </div> {% endcomment %}
+
+                <div class="stats-container">
+    <div class="stat-box bg-blue">
+      <div class="stat-icon"><i class="fas fa-users"></i></div>
+      <div class="stat-number">450+</div>
+      <div class="stat-label">Active Clients</div>
+    </div>
+    <div class="stat-box bg-purple">
+      <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+      <div class="stat-number">50+</div>
+      <div class="stat-label">IT Projects</div>
+    </div>
+    <div class="stat-box bg-pink">
+      <div class="stat-icon"><i class="fas fa-user-tie"></i></div>
+      <div class="stat-number">45+</div>
+      <div class="stat-label">Team Advisors</div>
+    </div>
+    <div class="stat-box bg-orange">
+      <div class="stat-icon"><i class="fas fa-award"></i></div>
+      <div class="stat-number">5+</div>
+      <div class="stat-label">Glorious Years</div>
+    </div>
+  </div>
+
+  <style>
+    {% comment %} * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      padding: 3rem 1rem;
+    } {% endcomment %}
+
+    .stats-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .stat-box {
+      flex: 1 1 200px;
+      max-width: 250px;
+      padding: 2rem;
+      border-radius: 1rem;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .stat-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-number {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+
+    .stat-label {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .bg-blue {
+      background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    }
+
+    .bg-purple {
+      background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    }
+
+    .bg-pink {
+      background: linear-gradient(135deg, #ec4899, #f472b6);
+    }
+
+    .bg-orange {
+      background: linear-gradient(135deg, #f97316, #fb923c);
+    }
+
+    @media (max-width: 768px) {
+      .stat-box {
+        width: 100%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
             </div>
         </div>
 
@@ -145,11 +248,11 @@
                                 <div class="heading7">
                                     <h4><a href="service-details.html">Software Development and Integration</a></h4>
                                     <p> IT solutions designed to streamline your operations, enhance security, and drive innovation.</p>
-                                    <a href="service-details.html" class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <a href="{% url "accounts:services" %}" class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                             <div class="image image-anime">
-                                <img src="{% static "assets/img/service/service7-img1.png" %}" alt="">
+                                <img src="{% static "assets/img/icons/icon_img1.webp" %}" alt="">
                             </div>
                         </div>
                     </div>
@@ -163,7 +266,7 @@
                                 <div class="heading7">
                                     <h4><a href="service-details.html">Unified Communications and Collaboration</a></h4>
                                     <p> From cloud infrastructure management and cybersecurity solutions to data analytics, network optimization,</p>
-                                    <a href="service-details.html" class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <a href="{% url "accounts:services" %}" class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                             <div class="image image-anime">
@@ -181,7 +284,7 @@
                                 <div class="heading7">
                                     <h4><a href="service-details.html">Network Optimization Services Managed IT Services</a></h4>
                                     <p>Whether you're looking to enhance productivity, improve efficiency, or stay ahead of technological</p>
-                                    <a href="service-details.html" class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <a href="{% url "accounts:services" %}" class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                             <div class="image image-anime">
@@ -203,13 +306,15 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="work7-image-area image-anime">
-                            <img src="assets/img/work/work7-image.png" alt="">
                             <div class="space20"></div>
                             <div class="heading7">
-                                <p>Dive into our portfolio to see how we've helped businesses like yours overcome challenges, achieve their goals, and thrive in today's digital landscape  robust cybersecurity solutions .</p>
+                                <p>Dive into our portfolio to see how we've helped businesses like yours overcome challenges, achieve their goals, and thrive in today's digital landscape  robust IT  solutions .Explore our diverse portfolio of successful projects and client engagements. From implementing robust IT solutions to developing cutting-edge software applications and optimizing network infrastructure,</p>
                                 <div class="space20"></div>
-                                <div class="">
-                                  <a class="theme-btn13" href="about.html"><span class="text">View Our Work</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
+                                <img src="{% static 'assets/img/work/work7-image.png' %}" alt="" style="width: 560px; height: 450px; border-radius: 5px; object-fit: contain;">
+                                <div class="" >
+                                    {% comment %} <p>Explore our diverse portfolio of successful projects and client engagements. From implementing robust IT solutions to developing cutting-edge software applications and optimizing network infrastructure,</p> {% endcomment %}
+                                    <div class="space10"></div>
+                                  <a class="theme-btn13" href="{% url "accounts:about" %}"><span class="text">View Our Work</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +324,7 @@
                             <span class="span">How It Works</span>
                             <h2 class="tg-element-title">See Our Work in Action <span>Featured Projects</span></h2>
                             <div class="space10"></div>
-                            <p data-aos="fade-left" data-aos-duration="700">Explore our diverse portfolio of successful projects and client engagements. From implementing robust cybersecurity solutions to developing cutting-edge software applications and optimizing network infrastructure,</p>
+                            <p data-aos="fade-left" data-aos-duration="700">Explore our diverse portfolio of successful projects and client engagements. From implementing robust IT solutions to developing cutting-edge software applications and optimizing network infrastructure,</p>
 
                             <div class="work-box" data-aos="fade-left" data-aos-duration="900">
                                 <div class="icon">
@@ -270,7 +375,7 @@
 
         <!--=====SKILL AREA START=======-->
 
-        <div class="skill7 sp" style="background-image: url({% static "assets/img/bg/skill7-bg.jpg" %});">
+        <div class="skill7 sp" style="background-image: url({% static "assets/img/hero/bg3.jpg" %});">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -292,17 +397,44 @@
                                 </div>
                                 <div class="progress-line" data-aos="fade-right" data-aos-duration="1100">
                                   <div class="heading">
-                                    <h6>Cyber Security</h6>
+                                    <h6>Custom Software Development</h6>
                                     <p>90%</p>
                                   </div>
                                   <div class="progress">
                                     <div class="progress-bar w-75" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                 </div>
-
+                                <div class="progress-line" data-aos="fade-right" data-aos-duration="1100">
+                                  <div class="heading">
+                                    <h6>Mobile App Development</h6>
+                                    <p>90%</p>
+                                  </div>
+                                  <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                                <div class="progress-line" data-aos="fade-right" data-aos-duration="1100">
+                                  <div class="heading">
+                                    <h6>Business Intelligence and Analytics</h6>
+                                    <p>90%</p>
+                                  </div>
+                                  <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                                <div class="progress-line" data-aos="fade-right" data-aos-duration="1100">
+                                  <div class="heading">
+                                    <h6>AI & Machine Learning Solutions</h6>
+                                    <p>90%</p>
+                                  </div>
+                                  <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+  
                                 <div class="progress-line" data-aos="fade-right" data-aos-duration="1300">
                                     <div class="heading">
-                                      <h6>Cyber Security</h6>
+                                      <h6>Cyber Security Solutions</h6>
                                       <p>70%</p>
                                     </div>
                                     <div class="progress">
@@ -317,7 +449,7 @@
 
                     <div class="col-lg-6">
                         <div class="image image-anime" data-aos="zoom-out" data-aos-duration="700">
-                            <img src="{% static "assets/img/about/skill7-image.png" %}" alt="">
+                            <img src="{% static "assets/img/about/skill_latest.jpg" %}" alt="" style="width: 100%; height: 650px; border-radius: 5px; object-fit: fill;">
                         </div>
                     </div>
                 </div>
@@ -344,7 +476,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4">
                         <div class="big-image" data-aos="fade-up" data-aos-duration="900">
-                            <img src="{% static "assets/img/testimonial/tes7-big-img.png" %}" alt="">
+                            <img src="{% static "assets/img/testimonial/test1.jpg" %}" alt="" style='width: 100%; height: 350px;'>
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -356,30 +488,62 @@
                                     <div class="qute">
                                         <img src="{% static "assets/img/icons/qute7.png" %}" alt="">
                                     </div>
-                                    <p>“I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a best greater artist than now. The lovely valley teems with vapor around me, & the meridian sun strikes.</p>
+                                    <p>“<span style="font-family:alice;font-weight:bold">Sudo TechLabs</span> transformed our outdated systems into a modern digital powerhouse. Their team’s dedication and technical expertise exceeded our expectations.”</p>
                                     <div class="bottom-area">
                                         <div class="image">
-                                            <img src="{% static "assets/img/testimonial/tes7-smoll-img.png" %}" alt="">
+                                            <img src="{% static "assets/img/icons/icon2.png" %}" alt=""style="width: 60px; height: auto;">
                                         </div>
                                         <div class="heading">
-                                            <h5><a href="#">Shakib Mahmud</a></h5>
-                                            <span>Operating Officer</span>
+                                            <h5><a href="#">Shubham Sain</a></h5>
+                                            <span>CTO,FinEdge Solutions</span>
                                         </div>
                                     </div>
                                 </div>
-
+                                
                                 <div class="single-slider">
                                     <div class="qute">
                                         <img src="{% static "assets/img/icons/qute7.png" %}" alt="">
                                     </div>
-                                    <p>“I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a best greater artist than now. The lovely valley teems with vapor around me, & the meridian sun strikes.</p>
+                                    <p>“From concept to deployment, working with <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span> was seamless. They understood our business goals and delivered a solution that truly added value.”</p>
                                     <div class="bottom-area">
                                         <div class="image">
-                                            <img src="{% static "assets/img/testimonial/tes7-smoll-img.png" %}" alt="">
+                                            <img src="{% static "assets/img/icons/icon2.png" %}" alt="" style="width: 60px; height: auto;">
                                         </div>
                                         <div class="heading">
-                                            <h5><a href="#">Shakib Mahmud</a></h5>
-                                            <span>Operating Officer</span>
+                                            <h5><a href="#">Anita Sharma</a></h5>
+                                            <span>Founder, SmartRetail India</span>
+                                        </div>
+                                    </div>
+                                </div>  
+                                
+                                <div class="single-slider">
+                                    <div class="qute">
+                                        <img src="{% static "assets/img/icons/qute7.png" %}" alt="">
+                                    </div>
+                                    <p>“Their AI and cloud solutions helped us cut costs and improve efficiency. We couldn’t have asked for a better partner.”</p>
+                                    <div class="bottom-area">
+                                        <div class="image">
+                                            <img src="{% static "assets/img/icons/icon2.png" %}" alt="" style="width: 60px; height: auto;">
+                                        </div>
+                                        <div class="heading">
+                                            <h5><a href="#">Nikhil Verma</a></h5>
+                                            <span>Operations Head, LogixTech Logistics</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="single-slider">
+                                    <div class="qute">
+                                        <img src="{% static "assets/img/icons/qute7.png" %}" alt="">
+                                    </div>
+                                    <p>“Professional, innovative, and dependable — <span style="font-family:alice;font-weight:bold">Sudo TechLabs</span> is our go-to partner for all things IT.”</p>
+                                    <div class="bottom-area">
+                                        <div class="image">
+                                            <img src="{% static "assets/img/icons/icon2.png" %}" alt="" style="width: 60px; height: auto;">
+                                        </div>
+                                        <div class="heading">
+                                            <h5><a href="#">Sana Tanwar</a></h5>
+                                            <span>QA Engineer, Tech Innovations</span>
                                         </div>
                                     </div>
                                 </div>
@@ -435,7 +599,7 @@
               <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="900">
                 <div class="team-box">
                   <div class="image image-anime">
-                    <img src="{% static "assets/img/team/team6-img2.png" %}" alt="">
+                    <img src="{% static "assets/img/team/smile.jpg" %}" alt="" style="height: 360px; width: 420px;">
                     <div class="hover-area">
                       <ul>
                         <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -466,7 +630,7 @@
                     </div>
                   </div>
                   <div class="heading-area">
-                    <h4><a href="#">MD. Saifuddin</a></h4>
+                    <h4><a href="#">Ranjit singh</a></h4>
                     <p>Web Developer</p>
                   </div>
                 </div>
@@ -549,7 +713,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="faq-image image-anime" data-aos="zoom-out" data-aos-duration="800">
-                  <img src="{% static "assets/img/others/faq6-img.png" %}" alt="">
+                  <img src="{% static "assets/img/others/faq1.avif" %}" alt="">
                 </div>
               </div>
             </div>
@@ -560,7 +724,7 @@
 
         <!--=====BRANDS AREA START=======-->
 
-        <div class="brands6">
+        {% comment %} <div class="brands6">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
@@ -590,7 +754,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> {% endcomment %}
 
         <!--=====BRANDS AREA END=======-->
 
@@ -614,7 +778,7 @@
               <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="700">
                 <div class="blog-box">
                   <div class="image image-anime">
-                    <img src="{% static "assets/img/blog/blog6-img1.png" %}" alt="">
+                    <img src="{% static "assets/img/blog/blog_img1.webp" %}" alt="" style='height: 305px; width: 396px; border-radius: 2px;'>
                   </div>
                   <div class="tags-area">
                     <a href="#" class="tag"><img src="{% static "assets/img/icons/tag6.svg" %}" alt=""> The IT Corner</a>
@@ -623,7 +787,7 @@
                   <div class="heading7">
                     <h4><a href="blog-details.html">Five Ways To Develop A World Class Sales Operations Function</a></h4>
                     <p>Our team of seasoned professionals shares valuable knowledge, tips, and best practices</p>
-                    <a href="blog-details.html" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a href="{% url "accounts:blogs" %}" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                   </div>
                 </div>
               </div>
@@ -631,7 +795,7 @@
               <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="900">
                 <div class="blog-box">
                   <div class="image image-anime">
-                    <img src="{% static "assets/img/blog/blog6-img2.png" %}" alt="">
+                    <img src="{% static "assets/img/blog/blog_img2.jpg" %}" alt="" style="height: 305px;">
                   </div>
                   <div class="tags-area">
                     <a href="#" class="tag"><img src="{% static "assets/img/icons/tag6.svg" %}" alt=""> The IT Corner</a>
@@ -640,7 +804,7 @@
                   <div class="heading7">
                     <h4><a href="blog-details.html">Succession Risks That Threaten Your Leadership Strategy.</a></h4>
                     <p>Welcome to our blog, your go-to resource for the latest insights, trends, and updates in the world.</p>
-                    <a href="blog-details.html" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a href="{% url "accounts:blogs" %}" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                   </div>
                 </div>
               </div>
@@ -648,7 +812,7 @@
               <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="1100">
                 <div class="blog-box">
                   <div class="image image-anime">
-                    <img src="{% static "assets/img/blog/blog6-img3.png" %}" alt="">
+                    <img src="{% static "assets/img/blog/blog_img3.webp" %}" alt="" style="height: 305px;">
                   </div>
                   <div class="tags-area">
                     <a href="#" class="tag"><img src="{% static "assets/img/icons/tag6.svg" %}" alt=""> The IT Corner</a>
@@ -657,7 +821,7 @@
                   <div class="heading7">
                     <h4><a href="blog-details.html">What Do Employee Engagement Surveys Tell You About Employee?</a></h4>
                     <p>Whether you're seeking expert advice on cybersecurity, cloud computing, data analytics,</p>
-                    <a href="blog-details.html" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a href="{% url "accounts:blogs" %}" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                   </div>
                 </div>
               </div>
