@@ -310,7 +310,7 @@
                             <div class="heading7">
                                 <p>Dive into our portfolio to see how we've helped businesses like yours overcome challenges, achieve their goals, and thrive in today's digital landscape  robust IT  solutions .Explore our diverse portfolio of successful projects and client engagements. From implementing robust IT solutions to developing cutting-edge software applications and optimizing network infrastructure,</p>
                                 <div class="space20"></div>
-                                <img src="{% static 'assets/img/work/work7-image.png' %}" alt="" style="width: 560px; height: 450px; border-radius: 5px; object-fit: contain;">
+                                <img src="{% static 'assets/img/team/work1.jpg' %}" alt="" style="width: 580px; height: 450px; border-radius: 7px;">
                                 <div class="" >
                                     {% comment %} <p>Explore our diverse portfolio of successful projects and client engagements. From implementing robust IT solutions to developing cutting-edge software applications and optimizing network infrastructure,</p> {% endcomment %}
                                     <div class="space10"></div>
@@ -778,7 +778,7 @@
               <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="700">
                 <div class="blog-box">
                   <div class="image image-anime">
-                    <img src="{% static "assets/img/blog/blog_img1.webp" %}" alt="" style='height: 305px; width: 396px; border-radius: 2px;'>
+                    <img src="{% static "assets/img/team/work2.jpg" %}" alt="" style='height: 305px; width: 396px; border-radius: 2px; object-fit: cover;'>
                   </div>
                   <div class="tags-area">
                     <a href="#" class="tag"><img src="{% static "assets/img/icons/tag6.svg" %}" alt=""> The IT Corner</a>
@@ -795,7 +795,7 @@
               <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="900">
                 <div class="blog-box">
                   <div class="image image-anime">
-                    <img src="{% static "assets/img/blog/blog_img2.jpg" %}" alt="" style="height: 305px;">
+                    <img src="{% static "assets/img/team/work3.jpg" %}" alt="" style="height: 305px;">
                   </div>
                   <div class="tags-area">
                     <a href="#" class="tag"><img src="{% static "assets/img/icons/tag6.svg" %}" alt=""> The IT Corner</a>
@@ -834,6 +834,16 @@
 
         <!--=====CTA AREA START=======-->
 
+        {% if messages %}
+  <div>
+    {% for message in messages %}
+      <p style="color: {% if message.tags == 'error' %}red{% else %}green{% endif %};">
+        {{ message }}
+      </p>
+    {% endfor %}
+  </div>
+{% endif %}
+
         <div class="cta7">
             <div class="container">
                 <div class="row bg align-items-center">
@@ -846,8 +856,9 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="form-area">
-                            <form action="#">
-                                <input type="email" placeholder="Enter Email Address">
+                            <form action="{% url 'accounts:subscribe' %}" method="post" class="form">
+                                {% csrf_token %}
+                                <input type="email" name="email" placeholder="Enter Email Address">
                                 <div class="button">
                                   <button class="theme-btn13" type="submit"><span class="text">Subscribe</span> <span class="arrows"><span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span><span class="arrow2"><i class="fa-solid fa-arrow-right"></i></span></span></button>
                                 </div>

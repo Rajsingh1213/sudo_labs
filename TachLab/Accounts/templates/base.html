@@ -622,6 +622,15 @@
       </div>
 
       <!--=====Mobile header end=======-->
+{% if messages %}
+  <div>
+    {% for message in messages %}
+      <p style="color: {% if message.tags == 'error' %}red{% else %}green{% endif %};">
+        {{ message }}
+      </p>
+    {% endfor %}
+  </div>
+{% endif %}
 
       {% block content %}
 
@@ -763,5 +772,4 @@
      <script src="{% static "assets/js/main.js" %}"></script>
 </body>
 
-<!-- Mirrored from techxen.vercel.app/index7.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 07:20:38 GMT -->
 </html>

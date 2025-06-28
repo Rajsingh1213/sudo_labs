@@ -166,7 +166,11 @@ class HomePageAPIView(APIView):
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.core.validators import validate_email
+from django.contrib import messages
+from django.core.exceptions import ValidationError
+from.models import Subscriber
 
 def base_view(request):
     return render(request,'base.html')
@@ -195,5 +199,21 @@ def contact_view(request):
 def index_view(request):
     return render(request,'index7.html')
 
-
+def subscribe(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        if not email:
+            messages.error(request, "Email is required.")
+            return redirect('accounts:index')
+        else:
+            try:
+                validate_email(email)
+                subscriber, created = Subscriber.objects.get_or_create(email=email)
+                if created:
+                    messages.success(request, "Thank you for subscribing!")
+                else:
+                    messages.info(request, "You are already subscribed.")
+            except ValidationError:
+                messages.error(request, "Invalid email address.")
+    return redirect('accounts:index')
 

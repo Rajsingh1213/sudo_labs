@@ -151,7 +151,7 @@
                     {% comment %} <img src="{% static 'assets/img/about/about2-img1.png' %}" alt=""> {% endcomment %}
                   </div>
                   <div class="image2">
-                    <img src="{% static 'assets/img/about/about_img1.png' %}" alt="" style="height:450px;">
+                    <img src="{% static 'assets/img/team/work1.jpg' %}" alt="" style="height:670px; border-radius: 7px; object-fit: cover;">
                   </div>
                   <div class="image3">
                     {% comment %} <img src="{% static 'assets/img/about/about2-img3.png' %}" alt=""> {% endcomment %}
@@ -747,7 +747,7 @@
                           <div class="team-box">
                             <div class="image-area">
                               <div class="image">
-                                <img src="{% static 'assets/img/team/subu.jpg' %}" alt="" style="height: 400px;">
+                                <img src="{% static 'assets/img/team/akshu1.jpg' %}" alt="" style="height: 400px;">
                               </div>
                               <div class="icon-area">
                                 <ul>
@@ -761,9 +761,9 @@
           
                             <div class="space30"></div>
                               <div class="heading1">
-                                <h4><a href="#">Shubham Sain</a></h4>
+                                <h4><a href="#">Akshansh Kulshrestha</a></h4>
                                 <div class="space10"></div>
-                                <p>Python Developer</p>
+                                <p>Backend Developer</p>
                               </div>
                           </div>
                         </div>
@@ -870,8 +870,8 @@
 
               <div class="col-lg-5">
                 <div class="buttons">
-                  <a class="btn btn-secondary" href="service.html">Request a Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                  <a class="btn btn-primary" href="service.html">Explore Solution <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a class="btn btn-secondary" href="{% url "accounts:contact" %}">Request a Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a class="btn btn-primary" href="{% url "accounts:contact" %}">Explore Solution <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
               </div>
             </div>

@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import (
     # About
-    AboutSection, AboutFeature, AboutGalleryImage, AboutTeamMember, TrustLogo,
+    AboutSection, AboutFeature, AboutGalleryImage, AboutTeamMember, Subscriber, TrustLogo,
 
     # Services
     Service, ServiceCategory, ServiceFeature,
@@ -124,3 +124,5 @@ class TestimonialAdmin(admin.ModelAdmin):
 class TestimonialCategoryAdmin(admin.ModelAdmin):
     list_display = ['name']
 
+
+admin.site.register(Subscriber)

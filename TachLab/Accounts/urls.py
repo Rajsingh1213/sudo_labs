@@ -10,7 +10,7 @@ from .views import (
     HomePageAPIView
 )
 from .views import base_view, home_view, about_view, services_view, products_view, blogs_view, testimonials_view, contact_view, index_view
-
+from . import views
 app_name = 'accounts'
 
 urlpatterns = [
@@ -58,4 +58,5 @@ urlpatterns = [
     path('testimonials/', testimonials_view, name='testimonials'),
     path('contact/', contact_view, name='contact'),
     path('', index_view, name='index'),
+    path('subscribe/', views.subscribe, name='subscribe'),
 ]
