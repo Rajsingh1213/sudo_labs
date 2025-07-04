@@ -217,3 +217,35 @@ def subscribe(request):
                 messages.error(request, "Invalid email address.")
     return redirect('accounts:index')
 
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from .models import ContactUs
+
+def contact_us_view(request):
+    if request.method == 'POST':
+        first_name = request.POST.get('first_name')
+        last_name = request.POST.get('last_name')
+        email = request.POST.get('email')
+        subject = request.POST.get('subject')
+        phone = request.POST.get('phone')
+        message_text = request.POST.get('message')
+
+        # Check if email already exists
+        if ContactUs.objects.filter(email=email).exists():
+            messages.error(request, "Email already submitted.")
+            return redirect('contact_us')  # use your URL name here
+
+        # Save the data
+        print(f"Received contact form submission: {first_name} {last_name}, {email}, {subject}, {phone}, {message_text}")
+        ContactUs.objects.create(
+            first_name=first_name,
+            last_name=last_name,
+            email=email,
+            subject=subject,
+            phone=phone,
+            message=message_text
+        )
+        messages.success(request, "Thank you for contacting us!")
+        return redirect('accounts:index')
+
+    return render(request, 'accounts:contact')

@@ -10,7 +10,7 @@ from .models import (
     Product, ProductCategory, ProductGalleryImage,
 
     # Contact
-    ContactSection,
+    ContactSection, ContactUs,
 
     # Blogs
     BlogHighlight, BlogCategory, BlogTag,
@@ -126,3 +126,4 @@ class TestimonialCategoryAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Subscriber)
+admin.site.register(ContactUs)
